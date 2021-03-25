@@ -11,24 +11,18 @@ new Vue(
     imageIndex:0
   },
   methods: {
-    nextImage:function(){
-      this.imageIndex++;
-
-      if (this.imageIndex==this.images.length) {
-        this.imageIndex=0;
-
-
-      }
-    },
-    prevImage:function(){
-      this.imageIndex--;
-
-      if (this.imageIndex < 0) {
-        this.imageIndex=this.images.length - 1;
-
-
-      }
-    }
+    nextSlide: function() {
+        this.slideIndex++;
+        if (this.slideIndex == this.images.length) {
+          this.slideIndex = 0;
+        }
+      },
+    prevSlide: function() {
+     this.slideIndex--;
+     if (this.slideIndex < 0) {
+       this.slideIndex = this.images.length -1;
+     }
+   }
  }
 }
 );
