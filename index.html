@@ -15,16 +15,16 @@
   <div class="carousel-wrapper">
     <div class="carousel">
       <div class="carousel-prev">
-          <i class="fas fa-angle-double-left"></i>
+          <i  @click="prevImage"class="fas fa-angle-double-left"></i>
       </div>
       <div class="carousel-images">
         <img class="img":src="images[imageIndex]" alt="">
         <div class="carousel-bullets">
-         <i class="fas fa-bullseye" v-for="(image , index) in images" :class=" imageindex == index ? 'active' :'active'"></i>
+         <i class="fas fa-bullseye" v-for="(image , index) in images" :class=" imageIndex == index ? 'active' :'active'"></i>
         </div>
       </div>
       <div class="carousel-next">
-          <i class="fas fa-angle-double-right"></i>
+          <i @click="nextImage" class="fas fa-angle-double-right"></i>
       </div>
     </div>
   </div>
