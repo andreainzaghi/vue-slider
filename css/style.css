@@ -1,0 +1,30 @@
+.carousel-wrapper{
+  width: 100%;
+  height:100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.carousel{
+
+  background-color: red;
+  display: flex;
+  padding:50px;
+}
+.carousel-images{
+  width:360px;
+  vertical-align: center;
+}
+.img{
+  width:350px;
+}
+.carousel-prev , .carousel-next{
+  display: flex;
+  align-items: center;
+  padding:20px;
+}
+.fa-bullseye{
+  padding:10px;
+}
